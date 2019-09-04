@@ -1,0 +1,10 @@
+<h1>Add User</h1>
+
+<%= form_for @user do |user| %>
+<%= user.label :first_name %>
+<%= user.text_field :first_name, require: true %><br>
+<%= user.label :last_name %>
+<%= user.text_field :last_name, require: true %><br><br>
+<%= user.submit %>
+
+<% end %>
